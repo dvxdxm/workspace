@@ -1,0 +1,1 @@
+kubectl exec -it postgresql-6c9c564985-bgvmz -- bash

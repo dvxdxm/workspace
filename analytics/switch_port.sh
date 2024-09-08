@@ -1,0 +1,1 @@
+DB_USERNAME=coworking DB_PASSWORD=123456 python app.py

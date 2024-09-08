@@ -1,0 +1,9 @@
+
+echo 'Apply pvc.yaml ...'
+kubectl apply -f pvc.yaml
+
+echo 'Apply pv.yaml ...'
+kubectl apply -f pv.yaml
+
+echo 'Apply db.yaml ...'
+kubectl apply -f db.yaml

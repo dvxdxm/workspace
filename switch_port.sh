@@ -1,0 +1,1 @@
+kubectl port-forward service/db-service 5433:5432
