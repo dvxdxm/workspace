@@ -27,7 +27,7 @@ spec:
               key: DB_USERNAME
         - name: POSTGRES_PASSWORD
           valueFrom:
-            configMapKeyRef:
+            secretKeyRef:
               name: db-secrets
               key: DB_PASSWORD
         ports:

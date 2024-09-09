@@ -1,1 +1,0 @@
-curl 127.0.0.1:5153/api/reports/daily_usage

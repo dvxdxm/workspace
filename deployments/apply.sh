@@ -1,3 +1,5 @@
+echo 'Apply db-configmap.yaml ...'
+kubectl apply -f db-configmap.yaml
 
 echo 'Apply pvc.yaml ...'
 kubectl apply -f pvc.yaml
