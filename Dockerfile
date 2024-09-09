@@ -17,15 +17,14 @@ USER postgres
 WORKDIR /db
 COPY ./db .
 
-RUN service postgresql start && \
-psql -c "CREATE USER $DB_USERNAME PASSWORD '$DB_PASSWORD'" && \
-psql < 1_create_tables.sql && \
-psql < 2_seed_users.sql && \
-psql < 3_seed_tokens.sql && \
-psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO $DB_USERNAME;" && \
-psql -c "GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO $DB_USERNAME"
-
-# -- End database setup
+RUN service postgresql start
+#  && \
+# psql -c "CREATE USER $DB_USERNAME PASSWORD '$DB_PASSWORD'" && \
+# psql < 1_create_tables.sql && \
+# psql < 2_seed_users.sql && \
+# psql < 3_seed_tokens.sql && \
+# psql -c "GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO $DB_USERNAME;" && \
+# psql -c "GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO $DB_USERNAME"
 
 USER root
 
