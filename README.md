@@ -49,3 +49,4 @@
 10. In CodeBuild select project created. then click to `Start build` to build image and run application
 11. Copy URI from ECR image build latest and paste to file `/deployments/deployment.yml`
 11. Run command: `kubectl apply -f deployment.yml` to apply Cowoking app service
+12. Run test api in Coworking app: `./test_api.sh`
