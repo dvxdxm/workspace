@@ -12,12 +12,14 @@
     d. `deployment.yaml` - Deployment Coworking service
 4. Folder `screenshots` - Resources screenshot from application and AWS
     a. `aws-codebuild.png` - Screenshot of AWS CodeBuild pipeline
-    b. `get-svc.png` - Screenshot of kubectl get svc
-    c. `aws-ecr.png` - Screenshot of AWS ECR repository for the application's repository
-    d. `get-pods.png` - Screenshot of kubectl get pods
-    e. `get-describe-db-service.png` - Screenshot of kubectl describe svc db-service
-    f. `get-describe-deployment.png` - Screenshot of kubectl describe deployment
-    g. `aws-cloudwatch.png` - Screenshot of AWS CloudWatch logs for the application
+    b. `auto-trigger-build.png` - Screenshot of AWS CodeBuild auto trigger build
+    c. `get-svc.png` - Screenshot of kubectl get svc
+    d. `aws-ecr.png` - Screenshot of AWS ECR repository for the application's repository
+    e. `get-pods.png` - Screenshot of kubectl get pods
+    f. `get-describe-db-service.png` - Screenshot of kubectl describe svc db-service
+    g. `get-describe-deployment.png` - Screenshot of kubectl describe deployment
+    h. `aws-cloudwatch.png` - Screenshot of AWS CloudWatch logs for the application
+    i. `cloudwatch_health_check.png` - Screenshot of AWS CloudWatch logs for api `health_check`
 
 ### Dependencies
 #### Local Environment
