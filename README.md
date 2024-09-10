@@ -33,7 +33,7 @@
 3. Test Database Connection:
     a. run command: `kubectl get pods` to get pod name ex: `postgresql-6889d46b98-bd84h`
     b. run command: `kubectl exec -it postgresql-b6c496864-cp5d4 -- bash`
-    c. Use username/password for DB defined in `db-configmap.yml`. Then run command to test: `psql -U coworking -d coworking`
+    c. Use username/password for DB defined in `db-configmap.yml`. Then run command to test: `psql -U myuser -d mydatabase`
 4. Open terminal in folder `/deployments` and run command: `kubectl apply -f db-service.yaml` to apply DB service
 5. run bash: `./switch_port.sh` to switch port from local port 5433 to node port 5432
 6. create and add data to database
