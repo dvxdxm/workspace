@@ -1,3 +1,6 @@
+echo 'Apply secrets.yaml ...'
+kubectl apply -f secrets.yml
+
 echo 'Apply db-configmap.yaml ...'
 kubectl apply -f db-configmap.yaml
 
